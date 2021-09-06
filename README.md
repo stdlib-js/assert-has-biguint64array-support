@@ -128,6 +128,23 @@ $ has-biguint64array-support
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/assert/has-bigint-support`][@stdlib/assert/has-bigint-support]: detect native BigInt support.
+-   [`@stdlib/assert/has-bigint64array-support`][@stdlib/assert/has-bigint64array-support]: detect native BigInt64Array support.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -184,6 +201,14 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-has-biguint64array-support/main/LICENSE
 
 [mdn-biguint64array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigUint64Array
+
+<!-- <related-links> -->
+
+[@stdlib/assert/has-bigint-support]: https://github.com/stdlib-js/assert-has-bigint-support
+
+[@stdlib/assert/has-bigint64array-support]: https://github.com/stdlib-js/assert-has-bigint64array-support
+
+<!-- </related-links> -->
 
 </section>
 
