@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.hasBigUint64ArraySupport;
+})();
 })();
 </script>
 ```
@@ -84,6 +86,7 @@ var bool = hasBigUint64ArraySupport();
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-biguint64array-support@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var bool = hasBigUint64ArraySupport();
 if ( bool ) {
@@ -92,6 +95,7 @@ if ( bool ) {
     console.log( 'Environment lacks BigUint64Array support.' );
 }
 
+})();
 })();
 </script>
 </body>
@@ -192,9 +196,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-bigint-support]: https://github.com/stdlib-js/assert-has-bigint-support/tree/umd
+[@stdlib/assert/has-bigint-support]: https://github.com/stdlib-js/assert-has-bigint-support/tree/umd/tree/umd
 
-[@stdlib/assert/has-bigint64array-support]: https://github.com/stdlib-js/assert-has-bigint64array-support/tree/umd
+[@stdlib/assert/has-bigint64array-support]: https://github.com/stdlib-js/assert-has-bigint64array-support/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
