@@ -24,30 +24,14 @@ limitations under the License.
 
 > Detect native [`BigUint64Array`][mdn-biguint64array] support.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-has-biguint64array-support
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var hasBigUint64ArraySupport = require( '@stdlib/assert-has-biguint64array-support' );
+import hasBigUint64ArraySupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-biguint64array-support@deno/mod.js';
 ```
 
 #### hasBigUint64ArraySupport()
@@ -70,7 +54,7 @@ var bool = hasBigUint64ArraySupport();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var hasBigUint64ArraySupport = require( '@stdlib/assert-has-biguint64array-support' );
+import hasBigUint64ArraySupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-biguint64array-support@deno/mod.js';
 
 var bool = hasBigUint64ArraySupport();
 if ( bool ) {
@@ -84,59 +68,7 @@ if ( bool ) {
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use the module as a general utility, install the module globally
-
-```bash
-npm install -g @stdlib/assert-has-biguint64array-support
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: has-biguint64array-support [options]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ has-biguint64array-support
-<boolean>
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -162,7 +94,7 @@ $ has-biguint64array-support
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -226,9 +158,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-bigint-support]: https://github.com/stdlib-js/assert-has-bigint-support
+[@stdlib/assert/has-bigint-support]: https://github.com/stdlib-js/assert-has-bigint-support/tree/deno
 
-[@stdlib/assert/has-bigint64array-support]: https://github.com/stdlib-js/assert-has-bigint64array-support
+[@stdlib/assert/has-bigint64array-support]: https://github.com/stdlib-js/assert-has-bigint64array-support/tree/deno
 
 <!-- </related-links> -->
 
