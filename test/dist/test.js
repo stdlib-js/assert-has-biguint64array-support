@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,78 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var detect = require( './../../dist' );
-
-
-// VARIABLES //
-
-var hasBigUint64Array = ( typeof BigUint64Array === 'function' ); // eslint-disable-line stdlib/require-globals
-var MAX_SIGNED_INT64 = '9223372036854775807'; // 2**63 - 1
-var MAX_SIGNED_INT64_P2 = '9223372036854775809';
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof detect, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
-});
-
-tape( 'feature detection result is a boolean', function test( t ) {
-	t.strictEqual( typeof detect(), 'boolean', 'detection result is a boolean' );
-	t.end();
-});
-
-tape( 'if `BigUint64Array` is supported, detection result is `true`', function test( t ) {
-	var mocked;
-	if ( hasBigUint64Array ) {
-		t.strictEqual( detect(), true, 'detection result is `true`' );
-	} else {
-		t.strictEqual( detect(), false, 'detection result is `false`' );
-	}
-	mocked = proxyquire( './../dist/main.js', {
-		'./biguint64array.js': Mock,
-		'@stdlib/assert-is-bigint': isTrue,
-		'@stdlib/assert-is-biguint64array': isTrue
-	});
-	t.strictEqual( mocked(), true, 'detection result is `true` (mocked)' );
-
-	t.end();
-
-	function isTrue() {
-		return true;
-	}
-
-	function Mock() {
-		return [
-			MAX_SIGNED_INT64,
-			MAX_SIGNED_INT64_P2
-		];
-	}
-});
-
-tape( 'if `BigUint64Array` is not supported, detection result is `false`', function test( t ) {
-	var mocked;
-	if ( hasBigUint64Array ) {
-		t.strictEqual( detect(), true, 'detection result is `true`' );
-	} else {
-		t.strictEqual( detect(), false, 'detection result is `false`' );
-	}
-	mocked = proxyquire( './../dist/main.js', {
-		'./biguint64array.js': {}
-	});
-	t.strictEqual( mocked(), false, 'detection result is `false`' );
-
-	mocked = proxyquire( './../dist/main.js', {
-		'./biguint64array.js': Mock
-	});
-	t.strictEqual( mocked(), false, 'detection result is `false`' );
-
-	t.end();
-
-	function Mock() {
-		throw new Error( 'beep' );
-	}
 });
