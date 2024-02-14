@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-has-biguint64array-support",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Detect native BigUint64Array support.",
   "license": "Apache-2.0",
   "author": {
@@ -40,10 +40,10 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-bigint": "^0.1.1",
-    "@stdlib/assert-is-biguint64array": "^0.1.1",
+    "@stdlib/assert-is-bigint": "^0.2.0",
+    "@stdlib/assert-is-biguint64array": "^0.2.0",
     "@stdlib/cli-ctor": "^0.1.1",
-    "@stdlib/fs-read-file": "^0.1.1"
+    "@stdlib/fs-read-file": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.1.1",
