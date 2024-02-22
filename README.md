@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hasBigUint64ArraySupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-biguint64array-support@deno/mod.js';
+import hasBigUint64ArraySupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-biguint64array-support@v0.2.1-deno/mod.js';
 ```
 
 #### hasBigUint64ArraySupport()
@@ -65,7 +65,7 @@ var bool = hasBigUint64ArraySupport();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasBigUint64ArraySupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-biguint64array-support@deno/mod.js';
+import hasBigUint64ArraySupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-biguint64array-support@v0.2.1-deno/mod.js';
 
 var bool = hasBigUint64ArraySupport();
 if ( bool ) {
