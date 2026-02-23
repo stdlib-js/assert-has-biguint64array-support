@@ -40,7 +40,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-bigint": "^0.2.3",
+    "@stdlib/assert-is-bigint": "^0.2.4",
     "@stdlib/assert-is-biguint64array": "^0.2.3",
     "@stdlib/cli-ctor": "^0.2.3",
     "@stdlib/fs-read-file": "^0.2.3"
@@ -54,7 +54,7 @@
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
